@@ -2,7 +2,7 @@ import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 
-function Navbar() {
+function Navbar(props) {
   const style = "text-[14px] cursor-pointer ml-[25px] mobile:ml-[5px]";
   return (
     <div className="sticky top-0 z-50 bg-green-400 navbar h-[60px] shadow-md">
@@ -24,7 +24,7 @@ function Navbar() {
           <div className={style}>Register</div>
           <div className={style}>Sign in</div>
           <div className={style}>
-            <Badge badgeContent={5} color="primary">
+            <Badge badgeContent={props.cartItems} color="primary">
               <ShoppingCartOutlined />
             </Badge>
           </div>

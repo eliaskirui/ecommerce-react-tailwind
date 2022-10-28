@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Announce from "../components/Announce";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
@@ -7,13 +7,14 @@ import NewsLetter from "../components/NewsLetter";
 import Products from "../components/Products";
 import Slider from "../components/Slider";
 const Home = () => {
+  const [cartItems, setCartItems] = useState(0);
   return (
     <div>
       <Announce />
-      <Navbar />
+      <Navbar cartItems={cartItems} />
       <Slider />
       <Categories />
-      <Products />
+      <Products cartItems={cartItems} setCartItems={setCartItems} />
       <NewsLetter />
       <Footer />
     </div>

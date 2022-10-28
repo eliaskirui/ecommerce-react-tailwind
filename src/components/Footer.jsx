@@ -48,7 +48,9 @@ const Footer = () => {
         </div>
         <div className="flex m-3">
           <EmailOutlined />
-          <p className="pl-3">example@gmail.com</p>
+          <a href="mailto:eliaskirui24@gmail.com" className="pl-3">
+            eliaskirui24@gmail.com
+          </a>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import CategoryPage from "./pages/CategoryPage";
 
 function App() {
+ 
   return (
     <div className="App">
       <Home />
