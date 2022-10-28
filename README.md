@@ -1,4 +1,4 @@
-DEMO ~ https://keen-axolotl-6c2e59.netlify.app/
+DEMO ~ https://ecommerce-react-tailwind-zeta.vercel.app/
 
 # Getting Started with Create React App
 
